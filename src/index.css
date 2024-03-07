@@ -36,7 +36,7 @@
 @media screen and (max-width: 1024px) {
     :root {
         --h1-font-size: 1.75rem;
-        --h1-font-size: 1.25rem;
+        --h2-font-size: 1.25rem;
         --h3-font-size: 1rem;
         --normal-font-size: 0.938rem;
         --small-font-size: 0.813rem;
@@ -113,11 +113,11 @@ img {
     padding-bottom: 2rem;
 }
 
-.section__tile {
+.section__title {
     font-size: var(--h1-font-size);
     margin-left: 0.875rem;
     position: relative;
-    font-size: var(--font-bold);
+    font-weight: var(--font-bold);
     margin-bottom: 3.75rem;
 
 }
@@ -126,8 +126,7 @@ img {
     content: '';
     background: url('./assets/dots-bg.svg');
     height: 2.25rem;
-    width: 2.25em;
-    width: 2.25em;
+    width: 2.25rem;
     position: absolute;
     left: -0.875rem;
     top: -0.875rem;
