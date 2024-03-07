@@ -9,6 +9,9 @@
     font-weight: var(--font-bold);
     transition: .3 ease-in-out;
 }
+.work__item.active{
+    color: var(--first-color);
+}
 .work__item:hover{
     color: var(--first-color);
 }

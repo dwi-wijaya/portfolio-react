@@ -4,22 +4,24 @@ import Menu from "./Menu";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
+  const [activeCategory, setActiveCategory] = useState('Everythings');
   const filterItems = (categoryItem) => {
     const updatedItems = Menu.filter((curElem) => {
       return curElem.category === categoryItem;
     });
     setItems(updatedItems);
+    setActiveCategory(categoryItem);
   };
   return (
     <section className="work container section" id="resume">
       <h2 className="section__title">Recent Works</h2>
 
       <div className="work__filters">
-        <span className="work__item" onClick={() => setItems(Menu)}>Everythings</span>
-        <span className="work__item" onClick={() => filterItems('Creative')}>Creative</span>
-        <span className="work__item" onClick={() => filterItems('Art')}>Art</span>
-        <span className="work__item" onClick={() => filterItems('Design')}>Design</span>
-        <span className="work__item" onClick={() => filterItems('Photography')}>Photography</span>
+        <span className={`work__item ${activeCategory === 'Everythings' ? 'active' : ''}`} onClick={() => { setItems(Menu); setActiveCategory('Everythings'); }}>Everythings</span>
+        <span className={`work__item ${activeCategory === 'Creative' ? 'active' : ''}`} onClick={() => filterItems('Creative')}>Creative</span>
+        <span className={`work__item ${activeCategory === 'Art' ? 'active' : ''}`} onClick={() => filterItems('Art')}>Art</span>
+        <span className={`work__item ${activeCategory === 'Design' ? 'active' : ''}`} onClick={() => filterItems('Design')}>Design</span>
+        <span className={`work__item ${activeCategory === 'Photography' ? 'active' : ''}`} onClick={() => filterItems('Photography')}>Photography</span>
       </div>
 
       <div className="work__container grid">
