@@ -114,6 +114,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 .shape {
     position: absolute;
@@ -159,7 +160,7 @@
     right: 45%;
     top: 11%;
 }
-.s10 {
+.s11 {
     bottom: 10%;
     right: 2%;
 }
