@@ -13,6 +13,7 @@
     text-align: center;
     z-index: 10;
     border-right: 1px solid hsl(0deg 0% 84.43%);
+    transition: .3s ease-in-out;
 }
 
 .nav__list {
@@ -45,4 +46,33 @@
     font-size: var(--small-font-size);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
+}
+.nav__toggle{
+    position: fixed;
+    top: 1.25rem;
+    left: 1.875rem;
+    cursor: pointer;
+    height: 40px;
+    width: 45px;
+    background-color: var(--body-color);
+    border: 1px solid #e8dfec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .2s ease-in-out;
+}
+@media screen and (max-width: 1024px){
+    .aside{
+        left: -80px;
+    }
+    .nav__toggle{
+        display: flex;
+    }
+    .nav__toggle-open{
+        left: 100px;
+    }
+    .show-menu{
+        left: 0;
+    }
 }
