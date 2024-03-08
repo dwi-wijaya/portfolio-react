@@ -20,7 +20,6 @@ function App() {
         <Services></Services>
         <Resume></Resume>
         <Portfolio></Portfolio>
-        <Testimonials></Testimonials>
         <Blog></Blog>
         <Contact></Contact>
       </div>
