@@ -4,7 +4,7 @@ const Card = (props) => {
     return (
         <div className="blog__card">
             <div className="blog__thumb">
-                <a href=""><img src={props.thumb} alt="" className="blog__img" /></a>
+                <a aria-label={props.title} href=""><img src={props.thumb} alt="" className="blog__img" /></a>
             </div>
             <div className="blog__details">
                 <h3 className="blog__title">{props.title}</h3>

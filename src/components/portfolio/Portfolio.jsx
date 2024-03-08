@@ -13,7 +13,7 @@ const Portfolio = () => {
     setActiveCategory(categoryItem);
   };
   return (
-    <section className="work container section" id="resume">
+    <section className="work container section" id="portfolio">
       <h2 className="section__title">Recent Works</h2>
 
       <div className="work__filters">
@@ -35,7 +35,7 @@ const Portfolio = () => {
               </div>
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a href="#" className="work__button">
+              <a aria-label="demo" href="#" className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>

@@ -1,59 +1,37 @@
 import React, { useState } from 'react';
-import './sidebar.css'
+import './sidebar.css';
 import Logo from '../../assets/logo.svg';
 
 const Sidebar = () => {
-    const [toggle, showMenu] = useState(false)
+    const [toggle, showMenu] = useState(false);
+
+    // Define your navigation items and icons using an object
+    const navItems = [
+        { id: 'home', iconClass: 'icon-home', label: 'home' },
+        { id: 'about', iconClass: 'icon-user-following', label: 'about' },
+        { id: 'services', iconClass: 'icon-briefcase', label: 'servies' },
+        { id: 'resume', iconClass: 'icon-graduation', label: 'resume' },
+        { id: 'portfolio', iconClass: 'icon-layers', label: 'portofolio' },
+        { id: 'blog', iconClass: 'icon-note', label: 'blog' },
+        { id: 'contact', iconClass: 'icon-envelope', label: 'contact' }
+    ];
+
     return (
         <>
             <aside className={`aside ${toggle && 'show-menu'}`}>
-                <a href="#home" className="nav__logo">
+                <a aria-label='go home' href="#home" className="nav__logo">
                     <img src={Logo} alt="Dwi-logo" />
                 </a>
                 <nav className="nav">
                     <div className="nav__menu">
                         <ul className="nav__list">
-                            <li className="nav__item">
-                                <a href="#home" className="nav__link">
-                                    <i className="icon-home"></i>
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#about" className="nav__link">
-                                    <i className="icon-user-following"></i>
-
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#services" className="nav__link">
-                                    <i className="icon-briefcase"></i>
-
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#resume" className="nav__link">
-                                    <i className="icon-graduation"></i>
-
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#porfolio" className="nav__link">
-                                    <i className="icon-layers"></i>
-
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#blog" className="nav__link">
-                                    <i className="icon-note"></i>
-
-                                </a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#contact" className="nav__link">
-                                    <i className="icon-buble"></i>
-
-                                </a>
-                            </li>
+                            {navItems.map(item => (
+                                <li key={item.id} className="nav__item">
+                                    <a aria-label={`go to ${item.label}`} href={`#${item.id}`} className="nav__link">
+                                        <i className={item.iconClass}></i>
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </nav>
@@ -66,6 +44,7 @@ const Sidebar = () => {
             </div>
         </>
 
-    )
-}
-export default Sidebar
+    );
+};
+
+export default Sidebar;

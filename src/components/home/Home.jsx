@@ -18,7 +18,7 @@ const Home = () => {
                     I'm a Full-stack developer
                 </span>
                 <HeaderSocials />
-                <a href="#contact" className="btn">Hire Me</a>
+                <a aria-label='hire me' href="#contact" className="btn">Hire Me</a>
                 <ScrollDown />
 
             </div>
