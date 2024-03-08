@@ -6,7 +6,6 @@ import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 import Resume from './components/resume/Resume'
-import Testimonials from './components/testimonials/Testimonials'
 import './App.css'
 
 function App() {
