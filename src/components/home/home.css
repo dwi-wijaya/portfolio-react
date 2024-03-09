@@ -51,6 +51,7 @@
 
 .home__scroll-name {
     font-size: var(--small-font-size);
+    color: var(--text-color);
 }
 
 .mouse {
@@ -141,8 +142,8 @@
     top: 10%;
 }
 .s6 {
-    left: 36%;
-    bottom: 10%;
+    left: 33%;
+    bottom: 18%;
 }
 .s7 {
     top: 20%;
