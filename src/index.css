@@ -146,7 +146,13 @@ img {
     gap: .75rem;
 }
 
+.section__title__wrapper {
+    display: flex;
+}
+
 .section__title {
+    width: fit-content;
+    position: relative;
     font-size: var(--h1-font-size);
     margin-left: 0.875rem;
     position: relative;
@@ -191,8 +197,13 @@ img {
 .btn:hover {
     animation: button-push 0.3s linear 1;
 }
-@media screen and (max-width: 768px){
-    .section__title{
+
+@media screen and (max-width: 768px) {
+    .section__title {
         text-align: center;
+    }
+
+    .section__title__wrapper {
+        justify-content: center;
     }
 }

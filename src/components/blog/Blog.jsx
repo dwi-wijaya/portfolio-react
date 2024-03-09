@@ -5,7 +5,9 @@ import Data from './Data';
 const Blog = () => {
   return (
     <section className="blog container section" id="blog">
-      <h2 className="section__title">Latest Posts</h2>
+      <div className="section__title__wrapper">
+        <h2 className="section__title">Latest Posts</h2>
+      </div>
 
       <div className="blog__container">
         {Data.map((data, id) => {
