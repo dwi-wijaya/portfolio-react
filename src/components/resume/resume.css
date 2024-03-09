@@ -52,7 +52,7 @@
 }
 @media screen and (max-width: 1024px){
     .resume__container{
-        grid-template-columns: 450px;
+        grid-template-columns: repeat(2,1fr);
         justify-content: center;
         row-gap: 1.875rem;
     }
