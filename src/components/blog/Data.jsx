@@ -10,7 +10,7 @@ const Data = [
         thumb: Image1,
         title: "Common Misconceptions About Payment",
         date: "07 September, 2022",
-        author: "Bolby",
+        author: "Dwi",
         desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
     },
     {
@@ -18,7 +18,23 @@ const Data = [
         thumb: Image2,
         title: "3 Things to know about startup business",
         date: "11 May, 2022",
-        author: "Bolby",
+        author: "Dwi",
+        desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+    },
+    {
+        id: 2,
+        thumb: Image2,
+        title: "3 Things to know about startup business",
+        date: "11 May, 2022",
+        author: "Dwi",
+        desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+    },
+    {
+        id: 2,
+        thumb: Image2,
+        title: "3 Things to know about startup business",
+        date: "11 May, 2022",
+        author: "Dwi",
         desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
     },
     {
@@ -26,7 +42,15 @@ const Data = [
         thumb: Image3,
         title: "5 Best App Development Tool for Your Projects",
         date: "07 February, 2022",
-        author: "Bolby",
+        author: "Dwi",
+        desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+    },
+    {
+        id: 3,
+        thumb: Image3,
+        title: "5 Best App Development Tool for Your Projects",
+        date: "07 February, 2022",
+        author: "Dwi",
         desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
     }
 ];
