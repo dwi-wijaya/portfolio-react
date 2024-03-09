@@ -225,7 +225,7 @@ img {
     cursor: pointer;
     height: 40px;
     width: 45px;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     border: var(--border);
     display: flex;
     justify-content: center;
