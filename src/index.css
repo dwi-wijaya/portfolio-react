@@ -31,6 +31,9 @@
 
     /* ====== Border Radius ====== */
     --border-radius: 20px;
+
+    /* ====== Border ====== */
+    --border: 1px solid #e7e7e7;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,19 +114,24 @@ img {
 .section {
     padding-top: 7rem;
     padding-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
 }
-.header__container .section__title{
+
+.header__container .section__title {
     margin-bottom: 0;
 }
-.header__container{
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: .5rem;
     margin-bottom: 3.75rem;
-    
+
 }
-.see-more{
+
+.see-more {
     margin-top: .25rem;
     color: var(--text-color);
     display: flex;
@@ -131,17 +139,19 @@ img {
     gap: .25rem;
     transition: .3s;
     transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
+
 .see-more:hover {
     gap: .75rem;
 }
+
 .section__title {
     font-size: var(--h1-font-size);
     margin-left: 0.875rem;
     position: relative;
     font-weight: var(--font-bold);
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.5rem;
 
 }
 
@@ -180,4 +190,9 @@ img {
 
 .btn:hover {
     animation: button-push 0.3s linear 1;
+}
+@media screen and (max-width: 768px){
+    .section__title{
+        text-align: center;
+    }
 }
