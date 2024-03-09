@@ -48,6 +48,7 @@
     writing-mode: vertical-rl;
 }
 .nav__toggle{
+    border-radius: 5px;
     position: fixed;
     top: 1.25rem;
     left: 1.875rem;
