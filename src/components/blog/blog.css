@@ -10,11 +10,11 @@
 .blog__card{
     display: flex;
     flex-direction: column;
-    box-shadow: var(--shadow);
     border-radius: var(--border-radius);
     overflow: hidden;
     min-width: 280px;
     border: var(--border);
+    background-color: var(--container-color);
 }
 .blog__card-more{
     display: flex;
