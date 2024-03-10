@@ -10,7 +10,7 @@ const ScrollUpToggle = () => {
         }
     })
     return (
-        <a href='#' className="scrollup toggle scrollup__toggle">
+        <a aria-label='go to top' href='#' className="scrollup toggle scrollup__toggle">
             <i className='bx bx-up-arrow-alt' ></i>
         </a>
     )
