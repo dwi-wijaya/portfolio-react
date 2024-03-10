@@ -119,6 +119,7 @@
 
     .contact__form-group {
         flex-direction: column;
+        gap: 0;
     }
 
     .contact__form {
