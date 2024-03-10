@@ -7,8 +7,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 import Resume from './components/resume/Resume'
 import './App.css'
-import ThemeToggle from './components/elements/ThemeToggle'
-import ScrollUpToggle from './components/elements/ScrollUpToggle'
+import ThemeToggle from './components/toggles/ThemeToggle'
+import ScrollUpToggle from './components/toggles/ScrollUpToggle'
 
 function App() {
 
