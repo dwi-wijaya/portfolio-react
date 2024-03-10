@@ -5,8 +5,8 @@
 }
 
 .about__img {
-    width: 350px;
     justify-self: center;
+    transition: .3 ease-out;
 }
 
 .about__info {
@@ -46,10 +46,10 @@
 @media screen and (max-width: 992px) {
     .about__container {
         grid-template-columns: 1fr;
-        row-gap: 2.5rem;
+        row-gap: 0rem;
     }
     .about__img{
-        width: 220px;
+        width: 420px;
     }
     .about__box{
         padding: .75rem .5rem;
@@ -69,8 +69,16 @@
     .about__info{
         grid-template-columns: repeat(3,1fr);
     }
+    
     .about_descriprion{
         padding: 0;
     }
+    .about__container {
+        row-gap: 0;
+    }
 }
-
+@media screen and (max-width: 576px) {
+    .about__img{
+        width: 220px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import Freelance from '../../assets/freelance.webp'
+import Freelance from '../../assets/freelance.svg'
 import Info from './Info'
 
 const About = () => {
