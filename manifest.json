@@ -1,0 +1,30 @@
+{
+  "name": "Dwi Wijaya",
+  "short_name": "Dwi",
+  "description": "Personal Portfolio, I am a web developer focused on creating modern, responsive web applications. With solid experience in front-end and back-end development, I combine design and coding skills to create engaging user experiences. I am also interested in integrating the latest technologies and best practices to improve the performance and security of web applications.",
+  "icons": [
+    {
+      "src": "/public/logo-512.png",
+      "sizes": "512x512",
+      "purpose": "maskable any",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/logo-128.png",
+      "sizes": "128x128",
+      "purpose": "maskable any",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/logo-48.png",
+      "sizes": "48x48",
+      "purpose": "maskable any",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ff4d61",
+  "background_color": "#f8f7fd",
+  "orientation": "portrait"
+}
