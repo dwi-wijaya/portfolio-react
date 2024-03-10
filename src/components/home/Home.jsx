@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <section data-section className="home container" id="home">
             <div className="intro">
-                <img width={108} height={108} loading="lazy" src={Me} alt="Avatar Dwi" className="home__img" />
+                <img width={108} height={108} src={Me} alt="Avatar Dwi" className="home__img" />
                 <h1 className="home__name">
                     Dwi Wijaya
                 </h1>
