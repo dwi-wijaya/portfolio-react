@@ -20,6 +20,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.625rem;
 
     /* ====== Font Weight ====== */
     --font-medium: 500;
@@ -208,6 +209,13 @@ img {
     display: inline-block;
     background-color: var(--first-color);
     font-weight: var(--font-bold);
+}
+.btn__flex {
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    gap: .5rem;
+    width: fit-content;
 }
 
 @keyframes button-push {
