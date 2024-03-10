@@ -239,6 +239,7 @@ img {
     height: 40px;
     width: 45px;
     background-color: var(--container-color);
+    color: var(--text-color);
     border: var(--border);
     display: flex;
     justify-content: center;
