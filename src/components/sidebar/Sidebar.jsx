@@ -8,7 +8,7 @@ const Sidebar = () => {
     // Define your navigation items and icons using an object
     const navItems = [
         { id: 'home', iconClass: 'icon-home', label: 'home' },
-        { id: 'about', iconClass: 'icon-user-following', label: 'about' },
+        { id: 'about', iconClass: 'icon-user', label: 'about' },
         { id: 'services', iconClass: 'icon-briefcase', label: 'servies' },
         { id: 'resume', iconClass: 'icon-graduation', label: 'resume' },
         { id: 'portfolio', iconClass: 'icon-layers', label: 'portofolio' },
@@ -39,7 +39,7 @@ const Sidebar = () => {
                     <span className="copyright">&copy; {new Date().getFullYear()}</span>
                 </div>
             </aside>
-            <div onClick={() => showMenu(!toggle)} className={`nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
+            <div onClick={() => showMenu(!toggle)} className={`toggle nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
                 <i className="icon-menu"></i>
             </div>
         </>

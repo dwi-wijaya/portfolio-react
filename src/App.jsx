@@ -8,11 +8,14 @@ import Services from './components/services/Services'
 import Resume from './components/resume/Resume'
 import './App.css'
 import ThemeToggle from './components/elements/ThemeToggle'
+import ScrollUpToggle from './components/elements/ScrollUpToggle'
+
 function App() {
 
   return (
     <>
       <ThemeToggle />
+      <ScrollUpToggle/>
       <Sidebar></Sidebar>
       <div className="main">
         <Home></Home>

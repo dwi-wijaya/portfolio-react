@@ -232,11 +232,9 @@ img {
 .btn:hover {
     animation: button-push 0.3s linear 1;
 }
-.theme__toggle{
+.toggle{
     border-radius: 5px;
     position: fixed;
-    top: 1.25rem;
-    right: 1.875rem;
     cursor: pointer;
     height: 40px;
     width: 45px;
@@ -247,6 +245,25 @@ img {
     align-items: center;
     z-index: 1;
     transition: .2s ease-in-out;
+}
+.toggle:hover{
+    background-color: var(--body-color);
+}
+.theme__toggle{
+    top: 1.25rem;
+    right: 1.875rem;
+}
+.scrollup__toggle{
+    bottom: -20%;
+    right: 1.875rem;
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+}
+.show-scroll{
+    bottom: 1.25rem;
 }
 @media screen and (max-width: 768px) {
     .section__title {

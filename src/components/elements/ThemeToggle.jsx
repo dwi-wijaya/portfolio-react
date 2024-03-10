@@ -22,7 +22,7 @@ const ThemeToggle = () => {
     };
 
     return (
-        <button className='theme__toggle' onClick={themeToggle}>
+        <button className='toggle theme__toggle' onClick={themeToggle}>
             <img src={theme ? DarkIcon : LightIcon} alt="Theme Icon" />
         </button>
     );
