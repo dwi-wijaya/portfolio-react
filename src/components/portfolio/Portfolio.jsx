@@ -13,7 +13,7 @@ const Portfolio = () => {
     setActiveCategory(categoryItem);
   };
   return (
-    <section className="work container section" id="portfolio">
+    <section data-section className="work container section" id="portfolio">
       <div className="section__title__wrapper">
         <h2 className="section__title">Recents Works</h2>
       </div>

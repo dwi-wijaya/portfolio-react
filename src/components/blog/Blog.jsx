@@ -4,7 +4,7 @@ import Card from './Card';
 import Data from './Data';
 const Blog = () => {
   return (
-    <section className="blog container section" id="blog">
+    <section data-section className="blog container section" id="blog">
       <div className="section__title__wrapper">
         <h2 className="section__title">Latest Posts</h2>
       </div>

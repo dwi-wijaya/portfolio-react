@@ -4,7 +4,7 @@ import Data from './Data'
 import Card from './Card';
 const Resume = () => {
   return (
-    <section className="resume container section" id="resume">
+    <section data-section className="resume container section" id="resume">
       <div className="section__title__wrapper">
         <h2 className="section__title">Experience</h2>
       </div>

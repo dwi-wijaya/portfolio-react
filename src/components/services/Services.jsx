@@ -30,7 +30,7 @@ const data = [
 
 const Services = () => {
   return (
-    <section className="services container section" id="services">
+    <section data-section className="services container section" id="services">
             <div className="section__title__wrapper">
         <h2 className="section__title">Services</h2>
       </div>

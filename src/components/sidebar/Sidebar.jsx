@@ -1,8 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './sidebar.css';
 import Logo from '../../assets/logo.svg';
 
 const Sidebar = () => {
+    const [activeSection, setActiveSection] = useState('home');
+    const sections = useRef([]);
+
+    const handleScroll = () => {
+        const sections = document.querySelectorAll('section');
+        let foundActive = false;
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                setActiveSection(section.id);
+                foundActive = true;
+            }
+        });
+        if (!foundActive) {
+            setActiveSection('home');
+        }
+
+    };
+
+    useEffect(() => {
+        sections.current = document.querySelectorAll('[data-section]');
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     const [toggle, showMenu] = useState(false);
 
     // Define your navigation items and icons using an object
@@ -26,7 +54,7 @@ const Sidebar = () => {
                     <div className="nav__menu">
                         <ul className="nav__list">
                             {navItems.map(item => (
-                                <li key={item.id} className="nav__item">
+                                <li key={item.id} className={`nav__item ${activeSection === item.id ? 'active' : ''}`}>
                                     <a aria-label={`go to ${item.label}`} href={`#${item.id}`} className="nav__link">
                                         <i className={item.iconClass}></i>
                                     </a>
