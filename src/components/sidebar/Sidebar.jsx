@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './sidebar.css';
-import Logo from '../../assets/logo.svg';
+import LogoDark from '../../assets/logo-dark.svg';
+import LogoLight from '../../assets/logo-light.svg';
+import { useTheme } from '../../context/ThemeContext';
 
 const Sidebar = () => {
     const [activeSection, setActiveSection] = useState('home');
     const sections = useRef([]);
+    const { theme } = useTheme();
 
     const handleScroll = () => {
         const sections = document.querySelectorAll('section');
@@ -48,7 +51,7 @@ const Sidebar = () => {
         <>
             <aside className={`aside ${toggle && 'show-menu'}`}>
                 <a aria-label='go home' href="#home" className="nav__logo">
-                    <img src={Logo} alt="Dwi-logo" />
+                    <img src={theme == 'dark' ? LogoDark : LogoLight} alt="Dwi-logo" />
                 </a>
                 <nav className="nav">
                     <div className="nav__menu">
