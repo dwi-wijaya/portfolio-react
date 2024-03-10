@@ -3,6 +3,7 @@ import './sidebar.css';
 import LogoDark from '../../assets/logo-dark.svg';
 import LogoLight from '../../assets/logo-light.svg';
 import { useTheme } from '../../context/ThemeContext';
+import 'simple-line-icons'
 
 const Sidebar = () => {
     const [activeSection, setActiveSection] = useState('home');
