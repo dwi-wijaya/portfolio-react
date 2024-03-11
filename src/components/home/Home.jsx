@@ -14,7 +14,7 @@ const Home = () => {
                     width={108}
                     height={108} 
                     fetchPriority="high"
-                    src='https://res.cloudinary.com/dzbdnr7fi/image/upload/f_auto,q_auto/v1/portfolio/xgsnzyhgoxcpftzx1rhp'
+                    src={Me}
                     alt="Avatar Dwi"
                     className="home__img"
                 />
