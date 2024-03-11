@@ -13,8 +13,8 @@ const Home = () => {
                 <img
                     width={108}
                     height={108} 
+                    fetchPriority="high"
                     src='https://res.cloudinary.com/dzbdnr7fi/image/upload/f_auto,q_auto/v1/portfolio/xgsnzyhgoxcpftzx1rhp'
-                    srcSet='https://res.cloudinary.com/dzbdnr7fi/image/upload/f_auto,q_auto/v1/portfolio/xgsnzyhgoxcpftzx1rhp'
                     alt="Avatar Dwi"
                     className="home__img"
                 />
