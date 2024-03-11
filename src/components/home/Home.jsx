@@ -13,7 +13,7 @@ const Home = () => {
                 <img
                     width={108}
                     height={108} 
-                    src={Me}
+                    src='https://res.cloudinary.com/dzbdnr7fi/image/upload/v1710123429/portfolio/xgsnzyhgoxcpftzx1rhp.svg'
                     srcSet={`${Me} 108w`}
                     alt="Avatar Dwi"
                     className="home__img"
