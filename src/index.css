@@ -1,5 +1,7 @@
+/*  Google font  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+/*  Boxicons font  */
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 /* ============ VARIABLE CSS ============ */
 :root {
 
