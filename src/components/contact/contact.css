@@ -4,7 +4,6 @@
     /* grid-template-columns: repeat(2, 1fr); */
     /* justify-content: center; */
     column-gap: 6rem;
-    padding-bottom: 3rem;
 }
 
 .contact__title {

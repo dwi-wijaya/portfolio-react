@@ -2,6 +2,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
+    row-gap: 2rem;
 }
 
 .about__img {
@@ -46,7 +47,6 @@
 @media screen and (max-width: 992px) {
     .about__container {
         grid-template-columns: 1fr;
-        row-gap: 0rem;
     }
     .about__img{
         width: 420px;
@@ -59,6 +59,7 @@
     }
     .about__info{
         justify-content: center;
+        gap: 1rem;
     }
     .about_descriprion{
         padding: .5rem;
@@ -72,9 +73,6 @@
     
     .about_descriprion{
         padding: 0;
-    }
-    .about__container {
-        row-gap: 0;
     }
 }
 @media screen and (max-width: 576px) {

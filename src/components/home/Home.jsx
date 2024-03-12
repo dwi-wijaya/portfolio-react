@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import './home.css'
 import Me from '../../assets/avatar-1.svg'
@@ -26,8 +27,6 @@ const Home = () => {
                 </span>
                 <HeaderSocials />
                 <a aria-label='hire me' href="#contact" className="btn">Hire Me</a>
-                <ScrollDown />
-
             </div>
             <Shapes />
         </section>
