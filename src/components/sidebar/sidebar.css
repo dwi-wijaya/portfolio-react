@@ -25,7 +25,7 @@
 .nav__item {
     text-align: center;
 }
-.nav__item.active a {
+.nav__link.active {
     color: hsl(22, 100%, 68%);
 }
 .nav__link:hover {

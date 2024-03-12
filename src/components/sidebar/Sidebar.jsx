@@ -1,45 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './sidebar.css';
 import LogoDark from '../../assets/logo-dark.svg';
 import LogoLight from '../../assets/logo-light.svg';
 import { useTheme } from '../../context/ThemeContext';
 import 'simple-line-icons'
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
-    const [activeSection, setActiveSection] = useState('home');
-    const sections = useRef([]);
     const { theme } = useTheme();
-
-    const handleScroll = () => {
-        const sections = document.querySelectorAll('section');
-        let foundActive = false;
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                setActiveSection(section.id);
-                foundActive = true;
-            }
-        });
-        if (!foundActive) {
-            setActiveSection('home');
-        }
-
-    };
-
-    useEffect(() => {
-        sections.current = document.querySelectorAll('[data-section]');
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     const [toggle, showMenu] = useState(false);
 
     // Define your navigation items and icons using an object
     const navItems = [
-        { id: 'home', iconClass: 'icon-home', label: 'home' },
+        { id: '', iconClass: 'icon-home', label: 'home' },
         { id: 'about', iconClass: 'icon-user', label: 'about' },
         { id: 'services', iconClass: 'icon-briefcase', label: 'servies' },
         { id: 'resume', iconClass: 'icon-graduation', label: 'resume' },
@@ -58,10 +31,10 @@ const Sidebar = () => {
                     <div className="nav__menu">
                         <ul className="nav__list">
                             {navItems.map(item => (
-                                <li key={item.id} className={`nav__item ${activeSection === item.id ? 'active' : ''}`}>
-                                    <a aria-label={`go to ${item.label}`} href={`#${item.id}`} className="nav__link">
+                                <li key={item.id} className='nav__item '>
+                                    <NavLink to={`/${item.id}`}  aria-label={`go to ${item.label}`} className="nav__link">
                                         <i className={item.iconClass}></i>
-                                    </a>
+                                    </NavLink>
                                 </li>
                             ))}
                         </ul>
