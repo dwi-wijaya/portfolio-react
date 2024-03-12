@@ -9,6 +9,7 @@ import Resume from './components/resume/Resume'
 import './App.css'
 import ThemeToggle from './components/toggles/ThemeToggle'
 import ScrollUpToggle from './components/toggles/ScrollUpToggle'
+import Skills from './components/skills/Skills'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <div className="main">
         <Home></Home>
         <About></About>
+        <Skills></Skills>
         <Services></Services>
         <Resume></Resume>
         <Portfolio></Portfolio>
