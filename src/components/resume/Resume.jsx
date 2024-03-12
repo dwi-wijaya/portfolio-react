@@ -8,6 +8,7 @@ const Resume = () => {
       <div className="section__title__wrapper">
         <h2 className="section__title">Experience</h2>
       </div>
+      <p className='section__subtitle'>Discover my professional background and valuable experiences.</p>
 
       <div className="resume__container grid">
         <div className="timeline grid">

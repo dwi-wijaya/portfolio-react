@@ -9,6 +9,7 @@ const About = () => {
       <div className="section__title__wrapper">
         <h2 className="section__title">About Me</h2>
       </div>
+      <p className='section__subtitle'>Get to know me a little better, beyond the resume.</p>
       <div className="about__container grid">
         <img src={Freelance} alt="Freelance" className='about__img' />
         <div className="about__data">

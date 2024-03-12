@@ -8,6 +8,7 @@ const Blog = () => {
       <div className="section__title__wrapper">
         <h2 className="section__title">Latest Posts</h2>
       </div>
+      <p className='section__subtitle'>Stay updated with my recent thoughts, insights, and more.</p>
 
       <div className="blog__container">
         {Data.map((data, id) => {

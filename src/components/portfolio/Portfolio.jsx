@@ -17,6 +17,7 @@ const Portfolio = () => {
       <div className="section__title__wrapper">
         <h2 className="section__title">Recents Works</h2>
       </div>
+      <p className='section__subtitle'>Explore my latest projects and creations.</p>
 
       <div className="work__filters">
         <span className={`work__item ${activeCategory === 'Everythings' ? 'active' : ''}`} onClick={() => { setItems(Menu); setActiveCategory('Everythings'); }}>Everythings</span>

@@ -5,10 +5,12 @@
     justify-content: center;
     margin-bottom: 1.5rem;
 }
-.skill__item img{
+
+.skill__item img {
     width: 1.5rem;
 }
-.skill__item{
+
+.skill__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +32,10 @@
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
 }
-.skill__item:hover{
+
+.skill__item:hover {
     scale: 1.05;
 }
-.skill__item:hover img{
-}
+
+.skill__item:hover img {}
+

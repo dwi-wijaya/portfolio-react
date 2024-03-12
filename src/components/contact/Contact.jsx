@@ -30,6 +30,7 @@ const Contact = () => {
       <div className="section__title__wrapper">
         <h2 className="section__title">Get in touch</h2>
       </div>
+      <p className='section__subtitle'>Reach out and start a conversation about potential collaborations or inquiries.</p>
 
       <div className="contact__container">
         <div className="contact-content">
