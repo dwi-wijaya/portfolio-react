@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import Menu from "./Menu";
+import PageHeading from "../elements/PageHeading";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -14,10 +15,10 @@ const Portfolio = () => {
   };
   return (
     <section data-section className="work container section" id="portfolio">
-      <div className="section__title__wrapper">
-        <h2 className="section__title">Recents Works</h2>
-      </div>
-      <p className='section__subtitle'>Explore my latest projects and creations.</p>
+      <PageHeading
+        title='Recents Works'
+        description='Explore my latest projects and creations.'
+      />
 
       <div className="work__filters">
         <span className={`work__item ${activeCategory === 'Everythings' ? 'active' : ''}`} onClick={() => { setItems(Menu); setActiveCategory('Everythings'); }}>Everythings</span>

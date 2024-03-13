@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css'
+import PageHeading from '../elements/PageHeading';
 
 const Contact = () => {
   const form = useRef();
@@ -27,10 +28,10 @@ const Contact = () => {
   };
   return (
     <section data-section className="contact container section" id="contact">
-      <div className="section__title__wrapper">
-        <h2 className="section__title">Get in touch</h2>
-      </div>
-      <p className='section__subtitle'>Reach out and start a conversation about potential collaborations or inquiries.</p>
+      <PageHeading
+        title='Get in touch'
+        description='Reach out and start a conversation about potential collaborations or inquiries.'
+      />
 
       <div className="contact__container">
         <div className="contact-content">
@@ -58,7 +59,7 @@ const Contact = () => {
         </div>
         <div className="contact__content">
           <h3 className="contact__title">
-            Write me your project
+            Or send me a message
           </h3>
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-group">

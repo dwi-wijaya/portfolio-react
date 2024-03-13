@@ -1,16 +1,15 @@
 import React from "react";
 import "./resume.css";
 import Data from "./Data";
+import PageHeading from "../elements/PageHeading";
 
 const Resume = () => {
   return (
     <section data-section className="resume container section" id="resume">
-      <div className="section__title__wrapper">
-        <h2 className="section__title">Experience</h2>
-      </div>
-      <p className="section__subtitle">
-        Discover my professional background and valuable experiences.
-      </p>
+      <PageHeading
+        title='Experience'
+        description='Discover my professional background and valuable experiences.'
+      />
 
       <div className="resume__container grid">
         <div className="timeline grid">

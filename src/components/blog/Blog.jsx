@@ -2,13 +2,14 @@ import React from 'react';
 import './blog.css'
 import Card from './Card';
 import Data from './Data';
+import PageHeading from '../elements/PageHeading';
 const Blog = () => {
   return (
     <section data-section className="blog container section" id="blog">
-      <div className="section__title__wrapper">
-        <h2 className="section__title">Latest Posts</h2>
-      </div>
-      <p className='section__subtitle'>Stay updated with my recent thoughts, insights, and more.</p>
+      <PageHeading
+        title='Latest Posts'
+        description='Stay updated with my recent thoughts, insights, and more.'
+      />
 
       <div className="blog__container">
         {Data.map((data, id) => {

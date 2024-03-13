@@ -3,6 +3,7 @@ import "./services.css";
 import icon1 from "../../assets/service-1.svg";
 import icon2 from "../../assets/service-2.svg";
 import icon3 from "../../assets/service-3.svg";
+import PageHeading from "../elements/PageHeading";
 
 const data = [
   {
@@ -38,10 +39,11 @@ const data = [
 const Services = () => {
   return (
     <section data-section className="services container section" id="services">
-      <div className="section__title__wrapper">
-        <h2 className="section__title">Services</h2>
-      </div>
-      <p className='section__subtitle'>Learn about the specialized services I offer to clients.</p>
+      <PageHeading
+        title='Services'
+        description='Learn about the specialized services I offer to clients.'
+      />
+      
       <div className="services__container grid">
         {data.map(({ id, icon, title, description }) => {
           return (
