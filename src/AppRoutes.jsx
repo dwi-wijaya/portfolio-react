@@ -1,27 +1,25 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './components/home/Home'
-import About from './components/about/About'
-import Skills from './components/skills/Skills'
-import Services from './components/services/Services'
-import Resume from './components/resume/Resume'
-import Portfolio from './components/portfolio/Portfolio'
-import Blog from './components/blog/Blog'
-import Contact from './components/contact/Contact'
-import Dashboard from './components/dashboard/Dashboard'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ServicesPage from './pages/ServicesPage'
+import ResumePage from './pages/ResumePage'
+import PortfolioPage from './pages/PortfolioPage'
+import BlogPage from './pages/BlogPage'
+import ContactPage from './pages/ContactPage'
+import DashboardPage from './pages/DashboardPage'
 
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
     )
 }
