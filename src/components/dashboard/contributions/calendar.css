@@ -10,13 +10,17 @@
     justify-content: space-between;
     gap: 3px;
     font-size: small;
-    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
 }
 .calendar-grid{
     display: flex;
     gap: 3px;
     justify-content: space-between;
-    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
 }
 .calendar-day{
     height: 15px;
