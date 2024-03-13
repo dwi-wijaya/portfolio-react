@@ -6,7 +6,7 @@ import PageHeading from '../elements/PageHeading'
 
 const About = () => {
   return (
-    <section data-section className='about container section' id='about'>
+    <section className='about container section' id='about' data-aos='fade-up'>
       <PageHeading
         title='About Me'
         description='Get to know me a little better, beyond the resume.'

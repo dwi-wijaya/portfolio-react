@@ -14,7 +14,7 @@ const Portfolio = () => {
     setActiveCategory(categoryItem);
   };
   return (
-    <section data-section className="work container section" id="portfolio">
+    <section className="work container section" id="portfolio" data-aos='fade-up'>
       <PageHeading
         title='Recents Works'
         description='Explore my latest projects and creations.'

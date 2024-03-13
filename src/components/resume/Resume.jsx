@@ -5,7 +5,7 @@ import PageHeading from "../elements/PageHeading";
 
 const Resume = () => {
   return (
-    <section data-section className="resume container section" id="resume">
+    <section className="resume container section" id="resume" data-aos='fade-up'>
       <PageHeading
         title='Experience'
         description='Discover my professional background and valuable experiences.'

@@ -38,7 +38,7 @@ const data = [
 
 const Services = () => {
   return (
-    <section data-section className="services container section" id="services">
+    <section className="services container section" id="services" data-aos='fade-up'>
       <PageHeading
         title='Services'
         description='Learn about the specialized services I offer to clients.'

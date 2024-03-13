@@ -27,7 +27,7 @@ const Contact = () => {
       );
   };
   return (
-    <section data-section className="contact container section" id="contact">
+    <section className="contact container section" id="contact" data-aos='fade-up'>
       <PageHeading
         title='Get in touch'
         description='Reach out and start a conversation about potential collaborations or inquiries.'
