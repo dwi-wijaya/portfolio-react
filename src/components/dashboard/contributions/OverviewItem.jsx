@@ -2,13 +2,13 @@ import AnimateCounter from "../../elements/AnimateCounter";
 
 const OverviewItem = ({ label, value, unit = '' }) => (
   <div className='overview__item'>
-    <span className='text-sm dark:text-neutral-400'>{label}</span>
+    <span className='overview__title'>{label}</span>
     <div>
       <AnimateCounter
         className='overview__item-number'
         total={value}
       />
-      {unit && <span className=''> {unit}</span>}
+      {unit && <span className='overview__unit'> {unit}</span>}
     </div>
   </div>
 );

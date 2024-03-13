@@ -26,7 +26,7 @@
     height: 15px;
     width: 15px;
     display: block;
-    border-radius: .125rem;
+    border-radius: .25rem;
     background-color: var(--day-color);
     margin: 7px 0;
 }
