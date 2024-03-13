@@ -9,6 +9,7 @@ const Dashboard = () => {
   const { data: userData, error } = useSWR("personal", getGithubUser);
 
   if (error) return console.log(error);
+  if (!userData) return '';
 
   const contributionCalendar = userData?.data?.contributionsCollection?.contributionCalendar;
 
