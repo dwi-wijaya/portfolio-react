@@ -112,8 +112,15 @@ const Calendar = ({ data }) => {
                     </ul>
                     <span>More</span>
                 </div>
+                <div
+                    className={clsx(
+                        `${selectContribution?.date ? 'opacity-100' : 'opacity-0'}`,
+                        'rounded bg-neutral-200 px-2 text-sm dark:bg-neutral-700'
+                    )}
+                > 
+                    {selectContribution?.count != null && `${selectContribution.count} contributions on ${selectContribution?.date}`}
+                </div>
 
-                
             </div>
         </>
     );
