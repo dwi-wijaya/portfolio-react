@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useSWR from "swr";
 import { getGithubUser } from "../../services/github";
 import Overview from "./contributions/Overview";
 import Calendar from "./contributions/Calendar";
 
 const Dashboard = () => {
-  const [userData, setUserData] = useState(null);
-  const [ContributionCalendar, setContributionCalendar] = useState(null);
+  const { data: userData, error } = useSWR("personal", getGithubUser);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const result = await getGithubUser("personal");
-        const contributionCalendar =
-          result?.data?.contributionsCollection?.contributionCalendar;
-        setContributionCalendar(contributionCalendar); // Assuming the data field contains user data
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchData();
-  }, []);
+  if (error) return <div>Failed to load</div>;
+  if (!userData) return <div>Loading...</div>;
+
+  const contributionCalendar = userData?.data?.contributionsCollection?.contributionCalendar;
 
   return (
     <section data-section className="contact container section" id="contact" data-aos='fade-up'>
@@ -30,8 +21,8 @@ const Dashboard = () => {
         Reach out and start a conversation about potential collaborations or
         inquiries.
       </p>
-      {ContributionCalendar && <Overview data={ContributionCalendar} />}
-      {ContributionCalendar && <Calendar data={ContributionCalendar} />}
+      {contributionCalendar && <Overview data={contributionCalendar} />}
+      {contributionCalendar && <Calendar data={contributionCalendar} />}
     </section>
   );
 };
