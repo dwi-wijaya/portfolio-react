@@ -1,0 +1,39 @@
+:root{
+    --day-color : rgb(212 212 212)
+}
+[data-theme='dark'] {
+    --day-color : hsl(218.57, 12.5%, 21.96%)
+
+}
+.calendar-month{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3px;
+    font-size: small;
+    overflow: hidden;
+}
+.calendar-grid{
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.calendar-day{
+    height: 12px;
+    width: 12px;
+    display: block;
+    border-radius: .125rem;
+    background-color: var(--day-color);
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.calendar-contribution{
+    display: flex;
+    gap: .25rem;
+}
+.calendar-footer{
+    display: flex;
+    align-items: center;
+    /* justify-content ; */
+    gap: .5rem;
+}

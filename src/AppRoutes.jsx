@@ -8,6 +8,7 @@ import Resume from './components/resume/Resume'
 import Portfolio from './components/portfolio/Portfolio'
 import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
+import Dashboard from './components/dashboard/Dashboard'
 
 const AppRoutes = () => {
     return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
     )
 }

@@ -13,6 +13,7 @@ const Sidebar = () => {
     // Define your navigation items and icons using an object
     const navItems = [
         { id: '', iconClass: 'icon-home', label: 'home' },
+        { id: 'dashboard', iconClass: 'icon-grid', label: 'dashboard' },
         { id: 'about', iconClass: 'icon-user', label: 'about' },
         { id: 'services', iconClass: 'icon-briefcase', label: 'servies' },
         { id: 'resume', iconClass: 'icon-graduation', label: 'resume' },
