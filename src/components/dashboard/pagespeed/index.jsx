@@ -10,7 +10,7 @@ import { fetcher } from '../../../services/fetcher'
 export default function PageSpeed() {
 
   const [url, setUrl] = useState(PAGESPEED_API)
-  const [active, setActive] = useState('/')
+  const [active, setActive] = useState('')
 
   const { data, isLoading, mutate } = useSwr(url, fetcher)
 

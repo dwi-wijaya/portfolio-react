@@ -1,6 +1,6 @@
 export const MENU_ITEMS = [
     {
-        href: "/",
+        href: "",
         iconClass: "icon-home",
         label: "Home",
     },
