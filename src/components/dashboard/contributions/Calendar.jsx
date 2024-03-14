@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import './calendar.css';
 const Calendar = ({ data }) => {
     const [selectContribution, setSelectContribution] = useState({
@@ -30,11 +30,18 @@ const Calendar = ({ data }) => {
         }) ?? [];
 
     const contributionColors = data?.colors ?? [];
+    const wrapper1Ref = useRef(null);
+    const wrapper2Ref = useRef(null);
 
+    const syncScroll = (fromRef, toRef) => {
+        if (fromRef.current && toRef.current) {
+            toRef.current.scrollLeft = fromRef.current.scrollLeft;
+        }
+    };
     return (
         <>
             <div className="relative flex flex-col">
-                <ul className="calendar-month text-color dark:text-neutral-400 md:justify-start">
+                <ul onScroll={() => syncScroll(wrapper1Ref, wrapper2Ref)} ref={wrapper1Ref} className="calendar-month">
                     {months.map((month) => (
                         <li
                             key={month.firstDay}
@@ -46,7 +53,7 @@ const Calendar = ({ data }) => {
                     ))}
                 </ul>
 
-                <div className="calendar-grid">
+                <div onScroll={() => syncScroll(wrapper2Ref, wrapper1Ref)} ref={wrapper2Ref} className="calendar-grid">
                     {weeks?.map((week) => (
                         <div key={week.firstDay}>
                             {week.contributionDays.map((contribution) => {
@@ -117,7 +124,7 @@ const Calendar = ({ data }) => {
                         `${selectContribution?.date ? 'opacity-100' : 'opacity-0'}`,
                         'rounded bg-neutral-200 px-2 text-sm dark:bg-neutral-700'
                     )}
-                > 
+                >
                     {selectContribution?.count != null && `${selectContribution.count} contributions on ${selectContribution?.date}`}
                 </div>
 

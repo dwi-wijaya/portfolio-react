@@ -5,11 +5,15 @@
     justify-content: flex-start;
     font-size: 10px;
     gap: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
     /* my-6 flex items-end justify-center space-x-6 text-[10px] text-neutral-600 dark:text-neutral-300 md:space-x-10 md:text-sm */
 }
 
 .speed__indicator h3 {
     font-weight: 400;
+    white-space: nowrap;
     font-size: var(--small-font-size);
 }
 
@@ -19,6 +23,7 @@
     justify-content: center;
     align-items: center;
     row-gap: .5rem;
+
 }
 
 .speed__progress {
