@@ -5,7 +5,7 @@ import '../dashboard/pagespeed/_speed_section.css'
 
 export default function CircleProgress({ value }) {
   return (
-    <div data-testid="progress" className="h-12 w-12 md:h-16 md:w-16 speed__progress">
+    <div data-testid="progress" className="speed__progress">
       <CircularProgressbar
         value={value}
         text={`${value}%`}
