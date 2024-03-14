@@ -1,8 +1,10 @@
+
 /*  Google font  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /*  Boxicons font  */
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 /* ============ VARIABLE CSS ============ */
+
 :root {
 
     /* ====== Colors ====== */
@@ -233,6 +235,11 @@ img {
 .btn:hover {
     animation: button-push 0.3s linear 1;
 }
+.border-section{
+    border: var(--border);
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
 .border{
     border: var(--border);
     margin-bottom: 2rem;
@@ -242,6 +249,7 @@ img {
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-weight: 500;
 }
 .toggle{
     border-radius: 5px;

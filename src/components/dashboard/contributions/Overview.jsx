@@ -2,7 +2,6 @@ import OverviewItem from "./OverviewItem";
 import './overview.css';
 
 const Overview = ({ data }) => {
-  console.log(data);
   const totalContributions = data?.totalContributions || 0;
   const weeks = data?.weeks || [];
 

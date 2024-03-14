@@ -63,6 +63,5 @@ export const getGithubUser = async (type) => {
     }
 
     const { username, token } = account;
-    console.log(token);
     return await fetchGithubData(username, token);
 };
