@@ -3,6 +3,8 @@ import './about.css'
 import Freelance from '../../assets/freelance.svg'
 import Info from './Info'
 import PageHeading from '../elements/PageHeading'
+import PageSubHeading from '../elements/PageSubHeading'
+import Skills from '../skills/Skills'
 
 const About = () => {
   return (
@@ -49,6 +51,10 @@ const About = () => {
         </div>
 
       </div>
+
+      <hr className="border" />
+      <PageSubHeading title='Skills' description='My professional skills.' icon='bx bx-code-alt' />
+      <Skills />
     </section>
   )
 }

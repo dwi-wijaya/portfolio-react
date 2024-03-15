@@ -204,6 +204,7 @@ img {
 
 }
 .section__subtitle {
+    margin-bottom: .5rem;
 }
 .btn {
     padding: 0.75rem 2rem;
