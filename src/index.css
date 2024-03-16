@@ -1,6 +1,6 @@
 
 /*  Google font  */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*  Boxicons font  */
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 /* ============ VARIABLE CSS ============ */
@@ -20,7 +20,7 @@
 
     /* ====== Font and Typography ====== */
     /* .5rem 8px | 1rem = 16px  ...*/
-    --body-font: 'Rubik', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -145,7 +145,13 @@ img {
 .grid {
     display: grid;
 }
-
+.card{
+    padding: 1rem 1.25rem;
+    border-radius: 20px;
+    background: var(--container-color);
+    border: var(--border);
+    text-align: start;
+}
 .section {
     padding-right: .6rem;
     padding-left: .6rem;
@@ -211,7 +217,7 @@ img {
 .btn {
     padding: 0.75rem 2rem;
     line-height: 1;
-    border-radius: 1.875rem;
+    border-radius: .75rem;
     box-shadow: 0 0 1px rgb(0 0 0 / 0%);
     border: 1px solid transparent;
     color: #fff;
