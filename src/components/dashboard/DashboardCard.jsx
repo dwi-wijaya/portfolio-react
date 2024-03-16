@@ -1,3 +1,4 @@
+import React from "react";
 import AnimateCounter from "../elements/AnimateCounter";
 
 const Number = ({ value }) => (
@@ -13,9 +14,9 @@ const DashboardCard = ({ title, value, isMultiple = false, unit = '' }) => (
     <div>
       {isMultiple ? (
         value.map((val, index) => (
-          <div key={index}>
+          <React.Fragment key={index}>
             <Number value={val} /> {index !== value.length - 1 && <span>-</span>}
-          </div>
+          </React.Fragment>
         ))
       ) : (
         <Number value={value} />
