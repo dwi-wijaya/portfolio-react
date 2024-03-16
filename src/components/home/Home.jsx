@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import './home.css'
 import Me from '../../assets/avatar-1.svg'
 import HeaderSocials from "./HeaderSocials";
-import Shapes from "./Shapes";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -11,7 +10,6 @@ const Home = () => {
     return (
         <>
             <div className="header__wrapper">
-                <Shapes />
             </div>
             <section data-section className="home container" id="home">
                 <div className="home-section">
@@ -46,7 +44,7 @@ const Home = () => {
                             <Link to='contact'
                                 aria-label='contact me'
                                 className='btn'
-                            >
+                            ><i className='bx bxs-message-dots'></i>
                                 Contact me
                             </Link>
                         </div>
