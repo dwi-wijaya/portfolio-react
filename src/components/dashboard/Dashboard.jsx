@@ -15,8 +15,6 @@ const Dashboard = () => {
   const { data: githubData, error: githubError } = useSWR("personal", getGithubUser);
   const { data: leetcodeData, error: leetcodeError } = useSWR(LEETCODE_API, fetcher);
 
-  console.log(leetcodeData);
-
   if (githubError) {
     console.error("Error fetching GitHub data:", githubError);
     return null; // or display an error message

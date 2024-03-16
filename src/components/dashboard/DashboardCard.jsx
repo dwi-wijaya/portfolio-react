@@ -13,9 +13,9 @@ const DashboardCard = ({ title, value, isMultiple = false, unit = '' }) => (
     <div>
       {isMultiple ? (
         value.map((val, index) => (
-          <>
-          <Number key={index} value={val} /> {index !== value.length - 1 && <span>-</span>}
-          </>
+          <div key={index}>
+            <Number value={val} /> {index !== value.length - 1 && <span>-</span>}
+          </div>
         ))
       ) : (
         <Number value={value} />
