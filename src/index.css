@@ -223,6 +223,7 @@ img {
     color: #fff;
     display: flex;
     gap: .5rem;
+    width: fit-content;
     align-items: center;
     background-color: var(--first-color);
     font-weight: var(--font-bold);

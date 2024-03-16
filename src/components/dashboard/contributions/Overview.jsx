@@ -1,4 +1,4 @@
-import OverviewItem from "./OverviewItem";
+import DashboardCard from "../DashboardCard";
 import './overview.css';
 
 const Overview = ({ data }) => {
@@ -24,11 +24,11 @@ const Overview = ({ data }) => {
   const averageContribution = totalContributions / totalContributionList.length;
 
   return (
-    <div className="overviews">
-      <OverviewItem label="Total" value={totalContributions} />
-      <OverviewItem label="This Week" value={totalThisWeekContribution} />
-      <OverviewItem label="Best Day" value={bestContribution} />
-      <OverviewItem label="Average" value={averageContribution} unit="/ day" />
+    <div className="dashboard__cards">
+      <DashboardCard title="Total" value={totalContributions} />
+      <DashboardCard title="This Week" value={totalThisWeekContribution} />
+      <DashboardCard title="Best Day" value={bestContribution} />
+      <DashboardCard title="Average" value={averageContribution} unit="/ day" />
     </div>
   );
 };

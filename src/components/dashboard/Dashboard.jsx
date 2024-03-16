@@ -7,15 +7,31 @@ import PageHeading from "../elements/PageHeading";
 import PageSubHeading from "../elements/PageSubHeading";
 import { PAGESPEED_URL } from "../../constants/pagespeed";
 import PageSpeed from "./pagespeed";
-
+import Letcode from "./letcode/Letcode";
+import { fetcher } from "../../services/fetcher";
+import { LEETCODE_API } from "../../constants/leetcode";
+import './dashboard.css'
 const Dashboard = () => {
-  const { data: userData, error } = useSWR("personal", getGithubUser);
+  const { data: githubData, error: githubError } = useSWR("personal", getGithubUser);
+  const { data: leetcodeData, error: leetcodeError } = useSWR(LEETCODE_API, fetcher);
 
-  if (error) return console.log(error);
-  if (!userData) return "";
+  console.log(leetcodeData);
 
-  const contributionCalendar =
-    userData?.data?.contributionsCollection?.contributionCalendar;
+  if (githubError) {
+    console.error("Error fetching GitHub data:", githubError);
+    return null; // or display an error message
+  }
+
+
+  if (leetcodeError) {
+    console.error("Error fetching LeetCode data:", leetcodeError);
+    return null; // or display an error message
+  }
+
+  if (!githubData) return "";
+  if (!leetcodeData) return "";
+
+  const contributionCalendar = githubData.data?.contributionsCollection?.contributionCalendar;
 
   return (
     <section
@@ -33,8 +49,17 @@ const Dashboard = () => {
         icon="bx bx-tachometer"
         link={PAGESPEED_URL}
       />
-      <PageSpeed/>
-      
+      <PageSpeed />
+
+      <hr className="border-section" />
+      <PageSubHeading
+        title="LeetCode Statistics"
+        description="My LeetCode progress and performance on LeetCode coding challenges"
+        icon="bx bx-code"
+        link={PAGESPEED_URL}
+      />
+      <Letcode data={leetcodeData}/>
+
       <hr className="border-section" />
       <PageSubHeading
         title="Contributions"
