@@ -54,7 +54,7 @@ const Dashboard = () => {
       <hr className="border-section" />
       <PageSubHeading
         title="LeetCode Statistics"
-        description="My LeetCode progress and performance on LeetCode coding challenges"
+        description="My LeetCode progress and performance."
         icon="bx bx-code"
         link={PAGESPEED_URL}
       />
