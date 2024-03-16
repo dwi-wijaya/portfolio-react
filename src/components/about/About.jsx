@@ -53,7 +53,7 @@ const About = () => {
       </div>
 
       <hr className="border" />
-      <PageSubHeading title='Skills' description='My professional skills.' icon='bx bx-code-alt' />
+      <PageSubHeading title='Skills' description='My professional skillset.' icon='bx bx-code-alt' />
       <Skills />
     </section>
   )

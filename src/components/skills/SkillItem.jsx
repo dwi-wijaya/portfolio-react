@@ -1,8 +1,8 @@
 import React from "react";
 import light from '../../assets/theme-light.svg'
-const SkillItem = ({ skill }) => {
+const SkillItem = ({ skill,index }) => {
     return (
-        <span>
+        <span key={index}>
             {skill.label}
         </span>
     );

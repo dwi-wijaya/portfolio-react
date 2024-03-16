@@ -17,7 +17,7 @@ export default function BadgeSection({ active, refetch }) {
             'badge__menu',
             active === route.href
               ? 'active'
-              : 'a'
+              : ''
           )}
           onClick={() => refetch(route.href)}
         >

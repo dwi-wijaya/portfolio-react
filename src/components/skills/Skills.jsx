@@ -3,22 +3,33 @@ import Data from "./Data";
 import "./skills.css";
 import SkillItem from "./SkillItem";
 
-const Skills = () => {
-
+const SkillsCategory = ({ data, animationTime, reverseAnimation }) => {
     return (
-        <div className="section__subtitle">
-            <div className="scroll" style={{ "--time": "60s" }}>
-                {[...Array(2)].map((index) => (
-                    <div key={index}>
-                        {Data.map((skill, index) => {
-                    return (
-                        <SkillItem key={index} skill={skill} />
-                    );
-                })}
-                    </div>
-                ))}
-            </div>
+        <div className="scroll" style={{ "--time": animationTime }}>
+            {[...Array(2)].map((_, index) => (
+                <div className={`${reverseAnimation ? 'reverse' : 'normal'}`} key={index}>
+                    {data.map((skill, skillIndex) => (
+                        <SkillItem key={skillIndex} skill={skill}  />
+                    ))}
+                </div>
+            ))}
         </div>
     );
 };
+
+const Skills = () => {
+
+    const Backend = Data.filter((item) => item.category === 'backend');
+    const Frontend = Data.filter((item) => item.category === 'frontend');
+    const Utilities = Data.filter((item) => item.category === 'utility');
+
+    return (
+        <div className="section__subtitle">
+            <SkillsCategory data={Backend} animationTime="60s" reverseAnimation={false} />
+            <SkillsCategory data={Frontend} animationTime="60s" reverseAnimation={true} />
+            <SkillsCategory data={Utilities} animationTime="60s" reverseAnimation={false} />
+        </div>
+    );
+};
+
 export default Skills;
