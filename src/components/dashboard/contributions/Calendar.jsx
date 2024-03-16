@@ -125,7 +125,12 @@ const Calendar = ({ data }) => {
                         'detail-contribution'
                     )}
                 >
-                    {selectContribution?.count != null && `${selectContribution.count} contributions on ${selectContribution?.date}`}
+                    {selectContribution?.count != null && (
+                        <span className="count">
+                            {selectContribution.count}
+                        </span>
+                    )} contributions on {selectContribution?.date}
+
                 </div>
 
             </div>

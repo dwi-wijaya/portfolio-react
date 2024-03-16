@@ -45,21 +45,32 @@
 
 .detail-contribution {
     background: var(--container-color);
-    padding: 0.25rem 0.5rem; /* Corrected padding syntax */
+    padding: 0.05rem 0.5rem; /* Corrected padding syntax */
     border-radius: 6px;
+    border: var(--border);
+    transition: all .3s ease-in-out;
     opacity: 0; /* Set initial opacity to 0 for hiding */
 }
+.opacity-0{
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
 .opacity-100{
+    transition: all .3s ease-in-out;
     opacity: 100;
 }
-
 .calendar-footer{
     display: flex;
     row-gap: .5rem;
     justify-content: space-between;
+    margin-top: 0.25rem;
+    align-items: center;
 }
 @media screen and (max-width: 767px){
 .calendar-footer{
     flex-direction: column;
 }
+}
+.count{
+    color: rgb(22 163 74);
 }
