@@ -76,7 +76,7 @@ const Calendar = ({ data }) => {
                                                 transition: { delay: getRandomDelayAnimate },
                                             },
                                         }}
-                                        className="calendar-day bg-neutral-300 dark:bg-neutral-800"
+                                        className="calendar-day"
                                         style={backgroundColor ? { backgroundColor } : undefined}
                                         onMouseEnter={() =>
                                             setSelectContribution({
@@ -95,11 +95,11 @@ const Calendar = ({ data }) => {
                 </div>
             </div>
 
-            <div className="calendar-grid">
-                <div className="calendar-footer">
-                    <span className="dark:text-neutral-400">Less</span>
+            <div className="calendar-footer">
+                <div className="calendar-info">
+                    <span className="">Less</span>
                     <ul className="calendar-contribution">
-                        <motion.li className="calendar-day bg-neutral-300 dark:bg-neutral-800" />
+                        <motion.li className="calendar-day" />
                         {contributionColors.map((item, index) => (
                             <motion.li
                                 key={item}
@@ -122,7 +122,7 @@ const Calendar = ({ data }) => {
                 <div
                     className={clsx(
                         `${selectContribution?.date ? 'opacity-100' : 'opacity-0'}`,
-                        'rounded bg-neutral-200 px-2 text-sm dark:bg-neutral-700'
+                        'detail-contribution'
                     )}
                 >
                     {selectContribution?.count != null && `${selectContribution.count} contributions on ${selectContribution?.date}`}
