@@ -15,7 +15,7 @@ const DashboardCard = ({ title, value, isMultiple = false, unit = '' }) => (
       {isMultiple ? (
         value.map((val, index) => (
           <React.Fragment key={index}>
-            <Number value={val} /> {index !== value.length - 1 && <span>-</span>}
+            <Number value={val} /> {index !== value.length - 1 && <span> - </span>}
           </React.Fragment>
         ))
       ) : (
