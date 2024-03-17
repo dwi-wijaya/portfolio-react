@@ -4,11 +4,11 @@ import Freelance from '../../assets/freelance.svg'
 import Info from './Info'
 import PageHeading from '../elements/PageHeading'
 import PageSubHeading from '../elements/PageSubHeading'
-import Skills from '../skills/Skills'
+
 
 const About = () => {
   return (
-    <section className='about container section' id='about' data-aos='fade-up'>
+    <>
       <PageHeading
         title='About Me'
         description='Get to know me a little better, beyond the resume.'
@@ -52,10 +52,10 @@ const About = () => {
 
       </div>
 
-      <hr className="border" />
-      <PageSubHeading title='Skills' description='My professional skillset.' icon='bx bx-code-alt' />
-      <Skills />
-    </section>
+      
+      
+
+    </>
   )
 }
 

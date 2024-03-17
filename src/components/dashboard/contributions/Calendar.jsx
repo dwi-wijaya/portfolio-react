@@ -1,3 +1,4 @@
+"use client"
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
@@ -19,7 +20,7 @@ const Calendar = ({ data }) => {
                 .flat(1);
             const getContributionsByMonth = filterContributionDay.reduce(
                 (previousValue, currentValue) =>
-                    previousValue + currentValue.contributionCount,
+                    previousValue + currentValue.contrisbutionCount,
                 0
             );
 

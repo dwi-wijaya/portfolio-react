@@ -79,4 +79,28 @@
     .about__img{
         width: 220px;
     }
+    .slick-dots{
+        bottom: -55px !important;
+    }
+}
+.certificates{
+    padding: 1rem;
+}
+.slick-track {
+    display: flex !important;
+    align-items: center;
+    gap: .5rem;
+}
+.slick-prev:before, .slick-next:before{
+    color: var(--text-color) !important;
+}
+.slick-dots li button:before {
+    color: var(--text-color) !important;
+}
+.credential{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
