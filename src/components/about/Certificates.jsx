@@ -12,9 +12,9 @@ const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // pauseOnHover: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
