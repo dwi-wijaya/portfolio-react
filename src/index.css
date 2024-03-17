@@ -10,7 +10,7 @@
 
     /* ====== Colors ====== */
     /* color mode using HSL (Hue,Saturation, Lightnesss) */
-    --first-color: hsl(353, 100%, 65%);
+    --first-color:hsl(20deg 93.67% 56.67%);
     --title-color: hsl(244, 24%, 26%);
     --text-color: hsl(244, 16%, 43%);
     --text-secondary: hsl(244, 16%, 58%);
@@ -51,7 +51,7 @@
 [data-theme='dark'] {
     --body-color: hsl(216, 18.07%, 16.27%);
     --container-color: hsl(218.57, 12.5%, 21.96%);
-    --first-color: hsl(353deg 48.52% 53.16%);
+    --first-color: hsl(24.91deg 95.5% 56.47%);
     --title-color: hsl(222.86deg 14.89% 90.78%);
     --text-color: hsl(0deg 0% 63.92%);
     --text-secondary: hsla(0, 0%,59%);
@@ -246,7 +246,9 @@ img {
         scale: 1;
     }
 }
-
+.relative{
+    position: relative;
+}
 .btn:hover {
     animation: button-push 0.3s linear 1;
 }
