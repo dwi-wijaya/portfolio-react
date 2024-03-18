@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <div className="header__wrapper">
             </div>
-            <section data-aos="zoom-in" data-section className="home container" id="home">
+            <section data-aos="fade-right" data-section className="home container" id="home">
                 <div className="home-section">
                     <div className="intro">
                         <img
