@@ -46,7 +46,7 @@ const Dashboard = () => {
         description="My pagespeed index by google APIs"
         icon="bx bx-tachometer"
         linkText='@pagespeed'
-        link='https://pagespeed.web.dev/analysis/https-dwi-wijaya-vercel-app/wkpg3gz41d?form_factor=desktop'
+        link='https://pagespeed.web.dev/'
       />
       <PageSpeed />
 

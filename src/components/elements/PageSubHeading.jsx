@@ -11,7 +11,7 @@ const PageSubHeading = ({ title, description, icon, link, linkText }) => {
      <p className="section__subtitle-text">
         {description}
       </p>
-      {link && linkText && <a className="section__subtitle-link" href={link}>{linkText}</a>}
+      {link && linkText && <a target="_blank" className="section__subtitle-link" href={link}>{linkText}</a>}
      </div>
     </>
   );
