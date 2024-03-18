@@ -45,7 +45,8 @@ const Dashboard = () => {
         title="Pagespeed Insight"
         description="My pagespeed index by google APIs"
         icon="bx bx-tachometer"
-        link={PAGESPEED_URL}
+        linkText='@pagespeed'
+        link='https://pagespeed.web.dev/analysis/https-dwi-wijaya-vercel-app/wkpg3gz41d?form_factor=desktop'
       />
       <PageSpeed />
 
@@ -54,7 +55,8 @@ const Dashboard = () => {
         title="LeetCode Statistics"
         description="My LeetCode progress and performance."
         icon="bx bx-code"
-        link={PAGESPEED_URL}
+        linkText='@dwi-wijaya'
+        link='https://leetcode.com/dwi-wijaya'
       />
       <Letcode data={leetcodeData}/>
 
@@ -63,7 +65,8 @@ const Dashboard = () => {
         title="Contributions"
         description="My contributions from last year on github."
         icon="bx bxl-github"
-        link={PAGESPEED_URL}
+        linkText='@dwi-wijaya'
+        link='https://github.com/dwi-wijaya'
       />
       {contributionCalendar && <Overview data={contributionCalendar} />}
       {contributionCalendar && <Calendar data={contributionCalendar} />}

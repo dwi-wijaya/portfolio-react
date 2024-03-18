@@ -1,17 +1,17 @@
 import React from "react";
 import { PAGESPEED_URL } from "../../constants/pagespeed";
 
-const PageSubHeading = ({ title, description, icon, link }) => {
+const PageSubHeading = ({ title, description, icon, link, linkText }) => {
   return (
     <>
       <h3 className="section__title-secondary">
         {icon && <i className={icon}></i>}{title}
       </h3>
      <div className="section__subtitle">
-     <p className="section__subtitle">
+     <p className="section__subtitle-text">
         {description}
       </p>
-      <a href={link}></a>
+      {link && linkText && <a className="section__subtitle-link" href={link}>{linkText}</a>}
      </div>
     </>
   );
