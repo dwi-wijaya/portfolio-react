@@ -39,6 +39,8 @@
 
 .home__img {
     margin-bottom: 1.5rem;
+    border-radius: 20px;
+    border: .35rem solid var(--body-color)
 }
 
 .home__greeting h1 {

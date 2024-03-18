@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import './home.css'
-import Me from '../../assets/avatar-1.svg'
+import Me from '../../assets/avatar-profile.webp'
 import HeaderSocials from "./HeaderSocials";
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <div className="header__wrapper">
             </div>
-            <section data-section className="home container" id="home">
+            <section data-aos="zoom-in" data-section className="home container" id="home">
                 <div className="home-section">
                     <div className="intro">
                         <img
