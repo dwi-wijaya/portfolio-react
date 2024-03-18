@@ -1,1 +1,1 @@
-export const LEETCODE_API = 'https://leetcode-stats-api.herokuapp.com/11Dwiwijaya';
+export const LEETCODE_API = 'https://leetcode-stats-api.herokuapp.com/dwi-wijaya';

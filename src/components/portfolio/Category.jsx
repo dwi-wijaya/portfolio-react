@@ -33,7 +33,7 @@ const Category = ({ filter, active }) => {
         <div className="categories">
             {Categories.map((category, index) => (
                 <div key={index} className="category">
-                    <button onClick={() => filter(category.slug)} className={`btn-filter ${active === category.slug ? 'active' : ''}`}>
+                    <button onClick={() => filter(category.slug)} title={category.label} className={`btn-filter ${active === category.slug ? 'active' : ''}`}>
                         <i className={category.icon}></i>
                         <span className='catname'>{category.label}</span>
                     </button>

@@ -7,6 +7,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import AppRoutes from './AppRoutes';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ProgressBar from './components/elements/ProgressBar';
 
 function App() {
   useEffect(() => {
@@ -21,7 +22,9 @@ function App() {
       <ScrollUpToggle />
       <Sidebar />
       <div className="main">
-        <AppRoutes />
+        <ProgressBar>
+          <AppRoutes />
+        </ProgressBar>
       </div>
     </ThemeProvider>
   );

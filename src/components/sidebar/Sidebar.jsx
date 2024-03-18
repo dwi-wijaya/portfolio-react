@@ -25,7 +25,7 @@ const Sidebar = () => {
                         <ul className="nav__list">
                             {MENU_ITEMS.map((item, index) => (
                                 <li key={index} className='nav__item '>
-                                    <NavLink to={`${item.href}`}  aria-label={`go to ${item.href}`} className="nav__link">
+                                    <NavLink to={`${item.href}`} title={item.label} aria-label={`go to ${item.href}`} className="nav__link">
                                         <i className={item.iconClass}></i>
                                     </NavLink>
                                 </li>
