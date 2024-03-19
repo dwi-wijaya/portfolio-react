@@ -289,6 +289,13 @@ img {
     gap: .5rem;
     font-weight: 500;
 }
+.toggle:active img {
+    transform: rotate(90deg);
+}
+
+.toggle img {
+    transition: transform 0.3s ease; /* Mengatur transisi rotasi selama 0.3 detik dengan efek 'ease' */
+}
 
 .toggle {
     border-radius: 5px;
@@ -303,8 +310,8 @@ img {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transition: .2s ease-in-out;
 }
+
 
 .toggle:hover {
     background-color: var(--body-color);
