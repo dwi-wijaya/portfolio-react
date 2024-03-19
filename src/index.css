@@ -292,9 +292,11 @@ img {
 .toggle:active img {
     transform: rotate(90deg);
 }
-
+[data-theme='dark'] .toggle:active img{
+    transform: rotate(180deg) !important;
+}
 .toggle img {
-    transition: transform 0.3s ease; /* Mengatur transisi rotasi selama 0.3 detik dengan efek 'ease' */
+    transition: transform 0.3s ease-out; /* Mengatur transisi rotasi selama 0.3 detik dengan efek 'ease' */
 }
 
 .toggle {
