@@ -22,6 +22,7 @@ function App() {
       <ScrollUpToggle />
       <Sidebar />
       <div className="main">
+        <div className="layout-overlay layout-menu-toggle"></div>
         <ProgressBar>
           <AppRoutes />
         </ProgressBar>

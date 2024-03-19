@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './sidebar.css';
 import LogoDark from '../../assets/logo-dark.svg';
 import LogoLight from '../../assets/logo-light.svg';
@@ -10,10 +10,11 @@ import { MENU_ITEMS } from '../../constants/menu';
 const Sidebar = () => {
     const { theme } = useTheme();
     const [toggle, showMenu] = useState(false);
-
-    // Define your navigation items and icons using an object
+    useEffect(() => {
+        document.body.setAttribute('class', toggle ? 'sidebar-expanded' : '');
+        document.body.setAttribute('class', toggle ? 'sidebar-expanded' : '');
+    }, [toggle]);
     
-
     return (
         <>
             <aside className={`aside ${toggle && 'show-menu'}`}>
