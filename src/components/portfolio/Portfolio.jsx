@@ -21,7 +21,7 @@ const Portfolio = () => {
   };
 
   const IconCategory = {
-    code: 'bx bx-code',
+    code: 'bx bx-code-alt',
     uiux: 'bx bx-palette',
     design: 'bx bx-pen',
     others: 'bx bx-customize',

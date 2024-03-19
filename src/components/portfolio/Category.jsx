@@ -7,7 +7,7 @@ const Categories = [
         label: 'All'
     },
     {
-        icon: 'bx bx-code',
+        icon: 'bx bx-code-alt',
         slug: 'code',
         label: 'Code',
     },
