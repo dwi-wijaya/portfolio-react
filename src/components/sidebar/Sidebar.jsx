@@ -13,21 +13,21 @@ const Sidebar = () => {
     const sidebarRef = useRef(null);
 
     useEffect(() => {
-        // Fungsi untuk menutup sidebar saat mengklik di luar sidebar
-        const handleOutsideClick = (event) => {
+        const handleClickOutside = (event) => {
             if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
                 setToggle(false);
             }
         };
 
-        // Tambahkan event listener saat komponen dimount
-        document.addEventListener('mousedown', handleOutsideClick);
-
-        // Membersihkan event listener saat komponen di-unmount
+        document.addEventListener("mousedown", handleClickOutside);
         return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
+            document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
+    const handleToggleClick = () => {
+        setToggle(prevToggle => !prevToggle);
+    };
 
     return (
         <>
@@ -52,7 +52,7 @@ const Sidebar = () => {
                     <span className="copyright">&copy; {new Date().getFullYear()}</span>
                 </div>
             </aside>
-            <div onClick={() => setToggle(!toggle)} className={`toggle nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
+            <div onClick={handleToggleClick} className={`toggle nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
                 <i className="icon-menu"></i>
             </div>
         </>
