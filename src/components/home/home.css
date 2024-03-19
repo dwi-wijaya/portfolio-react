@@ -30,7 +30,9 @@
 }
 
 .contact__content {
+    margin-top: .75rem;
     margin-bottom: .75rem;
+    line-height: 1.4;
 }
 
 .animate-waving-hand {

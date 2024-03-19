@@ -225,20 +225,24 @@ img {
 }
 
 .btn {
-    padding: 0.75rem 2rem;
+    padding: 0.65rem .65rem;
     line-height: 1;
-    border-radius: .75rem;
+    border-radius: .5rem;
     box-shadow: 0 0 1px rgb(0 0 0 / 0%);
     border: 1px solid transparent;
     color: #fff;
     display: flex;
-    gap: .5rem;
+    gap: .25rem;
     width: fit-content;
+    font-weight: 500 !important;
     align-items: center;
-    background-color: var(--first-color);
-    font-weight: var(--font-bold);
+    background-color: var(--text-color);
+    font-weight: 400 !important;
+    font-size: 15px;
 }
-
+.btn i{
+    font-size: larger;
+}
 .btn__flex {
     display: inline-flex;
     align-self: center;

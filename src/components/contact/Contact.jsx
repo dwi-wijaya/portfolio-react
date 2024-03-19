@@ -96,7 +96,7 @@ const Contact = () => {
               </textarea>
             </div>
             <button className="btn btn-contact">
-              Say Hello &nbsp; <i className="icon-paper-plane"></i>
+            <i className='bx bx-mail-send'></i> Send Message 
             </button>
           </form>
         </div>

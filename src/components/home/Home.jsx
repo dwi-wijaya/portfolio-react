@@ -35,7 +35,7 @@ const Home = () => {
                         <div className='card'>
                             <div className='contact__header'>
                                 <i className='bx bx-rocket'></i>
-                                <h3 className='text-xl font-medium'>Lets work together!</h3>
+                                <h2 className='text-xl font-medium'>Lets work together!</h2>
                             </div>
                             <p className='contact__content'>
                                 I&apos;m open for freelance projects, feel free to email me to see how
@@ -44,8 +44,8 @@ const Home = () => {
                             <Link to='contact'
                                 aria-label='contact me'
                                 className='btn'
-                            ><i className='bx bxs-message-dots'></i>
-                                Contact me
+                            >
+                                <i className="bx bx-envelope"></i>Contact me
                             </Link>
                         </div>
                     </div>

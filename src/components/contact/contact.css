@@ -79,10 +79,6 @@
     resize: none;
 }
 
-.btn-contact {
-    border-radius: .75rem !important;
-}
-
 @media screen and (max-width: 992px) {
     .contact__container {
         column-gap: 3rem;
@@ -100,10 +96,6 @@
 
     .contact__form {
         max-resolution: 0 auto;
-    }
-
-    .btn-contact {
-        width: 100%;
     }
 }
 
@@ -123,5 +115,9 @@
 
     .contact__form {
         width: 100%;
+    }
+    .btn-contact {
+        width: 100% !important;
+        justify-content: center !important;
     }
 }
