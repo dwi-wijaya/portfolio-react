@@ -55,11 +55,11 @@
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
 }
-.nav__toggle{
+.sidebar__toggle{
     border-radius: 5px;
     position: fixed;
     top: 1.25rem;
-    left: 1.875rem;
+    left:0;
     cursor: pointer;
     height: 40px;
     width: 45px;
@@ -75,11 +75,12 @@
     .aside{
         left: -80px;
     }
-    .nav__toggle{
+    .sidebar__toggle{
         display: flex;
+        left:  1.875rem !important;
     }
-    .nav__toggle-open{
-        left: 100px;
+    .sidebar__toggle-open{
+        left: 100px !important;
     }
     .show-menu{
         left: 0;
