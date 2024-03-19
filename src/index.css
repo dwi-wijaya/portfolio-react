@@ -217,6 +217,7 @@ img {
     margin-bottom: .5rem;
     display: flex;
     justify-content: space-between;
+    line-height: 1.2;
 }
 
 .section__subtitle-link {
