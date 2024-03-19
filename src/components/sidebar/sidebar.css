@@ -29,7 +29,7 @@
     padding: .5rem .75rem;
     background: hsl(22deg 100% 68% / 30%);
     border-radius: .45rem;
-    border: 1px solid rgba(255, 160, 70, 0.753);
+    border: 1px solid rgb(255 160 70 / 40%);
 }
 .nav__link.active {
     color: var(--first-color);
