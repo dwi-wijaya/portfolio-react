@@ -45,10 +45,10 @@ const Sidebar = () => {
                 <div className="nav__footer">
                     <span className="copyright">&copy; {new Date().getFullYear()}</span>
                 </div>
+                <div onClick={handleToggleClick} className={`toggle nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
+                    <i className="icon-menu"></i>
+                </div>
             </aside>
-            <div onClick={handleToggleClick} className={`toggle nav__toggle ${toggle ? 'nav__toggle-open' : ''}`}>
-                <i className="icon-menu"></i>
-            </div>
         </>
     );
 };
