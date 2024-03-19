@@ -24,7 +24,7 @@ const Skills = () => {
     const Utilities = Data.filter((item) => item.category === 'utility');
 
     return (
-        <div className="section__subtitle">
+        <div className="section__skills">
             <SkillsCategory data={Backend} animationTime="60s" reverseAnimation={false} />
             <SkillsCategory data={Frontend} animationTime="60s" reverseAnimation={true} />
             <SkillsCategory data={Utilities} animationTime="60s" reverseAnimation={false} />
