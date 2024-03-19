@@ -47,7 +47,7 @@ const Services = () => {
       <div className="services__container grid">
         {data.map(({ id, icon, title, description }) => {
           return (
-            <div className="services__card" key={id}>
+            <div data-aos="fade-right" className="services__card" key={id}>
               <i className={`services__icon bx bx-${icon}`}></i>
               <h3 className="services__title">{title}</h3>
               <p className="services__description">{description}</p>

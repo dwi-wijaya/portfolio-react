@@ -12,7 +12,7 @@ const Resume = () => {
       />
 
       <div className="resume__container grid">
-        <div className="timeline grid">
+        <div data-aos="fade-right" className="timeline grid">
           {Data.map((val, id) => {
             if (val.category === "education") {
               return (
@@ -27,7 +27,7 @@ const Resume = () => {
             }
           })}
         </div>
-        <div className="timeline grid">
+        <div data-aos="fade-right" className="timeline grid">
           {Data.map((val, id) => {
             if (val.category === "experience") {
               return (
