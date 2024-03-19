@@ -4,7 +4,7 @@ import LogoDark from '../../assets/logo-dark.svg';
 import LogoLight from '../../assets/logo-light.svg';
 import { useTheme } from '../../context/ThemeContext';
 import 'simple-line-icons'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { MENU_ITEMS } from '../../constants/menu';
 
 const Sidebar = () => {
@@ -17,9 +17,9 @@ const Sidebar = () => {
     return (
         <>
             <aside className={`aside ${toggle && 'show-menu'}`}>
-                <a aria-label='go home' href="#home" className="nav__logo">
+                <Link aria-label='go home' to="" className="nav__logo">
                     <img src={theme == 'dark' ? LogoDark : LogoLight} alt="Dwi-logo" />
-                </a>
+                </Link>
                 <nav className="nav">
                     <div className="nav__menu">
                         <ul className="nav__list">
