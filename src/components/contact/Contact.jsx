@@ -21,9 +21,11 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert('Failed to send email. Please try again later.');
         }
       )
       .finally(() => {
