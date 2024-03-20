@@ -95,6 +95,11 @@
     padding: .5rem 1rem;
     border-radius: 14px;
     border: var(--border);
+    font-size: large;
     transition: all .2s ease-out;
 }
-
+span i{
+    font-size: large;
+    display: flex;
+    align-self: center;
+}

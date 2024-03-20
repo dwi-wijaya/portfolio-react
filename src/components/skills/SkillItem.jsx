@@ -1,8 +1,9 @@
 import React from "react";
-import light from '../../assets/theme-light.svg'
-const SkillItem = ({ skill,index }) => {
+
+const SkillItem = ({ skill, index }) => {
     return (
         <span key={index}>
+            <i dangerouslySetInnerHTML={{__html: skill.icon}} />
             {skill.label}
         </span>
     );

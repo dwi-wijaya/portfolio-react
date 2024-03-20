@@ -25,9 +25,9 @@ const Skills = () => {
 
     return (
         <div className="section__skills">
-            <SkillsCategory data={Backend} animationTime="60s" reverseAnimation={false} />
-            <SkillsCategory data={Frontend} animationTime="60s" reverseAnimation={true} />
-            <SkillsCategory data={Utilities} animationTime="60s" reverseAnimation={false} />
+            <SkillsCategory data={Backend} animationTime="120s" reverseAnimation={false} />
+            <SkillsCategory data={Frontend} animationTime="120s" reverseAnimation={true} />
+            <SkillsCategory data={Utilities} animationTime="120s" reverseAnimation={false} />
         </div>
     );
 };
