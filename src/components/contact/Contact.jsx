@@ -1,14 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css'
 import PageHeading from '../elements/PageHeading';
 
 const Contact = () => {
   const form = useRef();
-
+  const [loading, setLoading] = useState(false); // State to track loading state
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading state to true when form is submitted
 
     emailjs
       .sendForm(
@@ -23,9 +24,13 @@ const Contact = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
-      );
+        }
+      )
+      .finally(() => {
+        setLoading(false); // Reset loading state after form submission completes
+      });
   };
+
   return (
     <section className="contact container section" id="contact" data-aos='fade-up'>
       <PageHeading
@@ -96,7 +101,7 @@ const Contact = () => {
               </textarea>
             </div>
             <button className="btn btn-contact">
-            <i className='bx bx-mail-send'></i> Send Message 
+            {loading ? <i className='bx bx-loader bx-spin'></i> : <i className='bx bx-mail-send'></i>} {loading ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         </div>
