@@ -24,10 +24,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
 }
-.thumb__header{
+
+.thumb__header {
     z-index: 10;
 }
-.work__mask{
+
+.work__mask {
     top: 0;
     background-color: black;
     opacity: 0;
@@ -41,9 +43,11 @@
     color: white;
     transition: all .2s ease-in-out;
 }
+
 .work__card:hover .work__mask {
     opacity: .8;
 }
+
 .work__card {
     position: relative;
     display: flex;
@@ -59,11 +63,13 @@
     object-fit: cover;
     height: 12rem;
 }
-.work__title{
+
+.work__title {
     font-weight: 500;
     line-height: 1.2;
 }
-.work__desc{
+
+.work__desc {
     padding: 1rem 1.25rem;
     display: flex;
     flex-direction: column;
@@ -71,14 +77,16 @@
     height: 100%;
     gap: .75rem;
 }
-.work__subtitle{
+
+.work__subtitle {
     font-size: var(--small-font-size);
     display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
 }
-.featured{
+
+.featured {
     position: absolute;
     display: flex;
     align-items: center;
@@ -87,17 +95,26 @@
     padding: .25rem .5rem;
     background: hsl(35.28deg 84.52% 67.06%);
     color: black;
-    border-bottom-left-radius: 10px;  
+    border-bottom-left-radius: 10px;
     z-index: 2;
 }
-.work__category{           
+
+.work__category {
     position: absolute;
     padding: .25rem .5rem;
     left: 0;
     background: hsl(35.28deg 84.52% 67.06%);
     color: black;
-    border-bottom-right-radius: 10px;  
-    z-index: 2;          
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+}
+
+.btn-filter:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.btn-filter:active {
+    transform: scale(0.90);
 }
 
 @media screen and (max-width: 1024px) {
@@ -126,18 +143,22 @@
     .work__container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .catname{
+
+    .catname {
         display: none;
     }
-    .btn-filter{
-            font-size: var(--h1-font-size);
+
+    .btn-filter {
+        font-size: var(--h1-font-size);
     }
-    .categories{
+
+    .categories {
         justify-content: center;
     }
 
 }
-.btn-filter{
+
+.btn-filter {
     display: flex;
     gap: .2rem;
     white-space: nowrap;
@@ -148,16 +169,20 @@
     color: var(--text-color);
     border: var(--border);
 }
-.btn-filter.active{
+
+.btn-filter.active {
     color: var(--first-color) !important;
 }
-.categories{
+
+.categories {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     gap: 1rem;
     margin-bottom: 1.75rem;
 }
-.btn-filter:hover{
-    color: var(--first-color);;
+
+.btn-filter:hover {
+    color: var(--first-color);
+    ;
 }

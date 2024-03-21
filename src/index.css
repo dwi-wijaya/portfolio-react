@@ -267,7 +267,7 @@ img {
     position: relative;
 }
 
-.btn:hover {
+.btn:active {
     animation: button-push 0.3s linear 1;
 }
 
