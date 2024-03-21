@@ -17,7 +17,7 @@ export const MENU_ITEMS = [
     {
         href: "/services",
         iconClass: "icon-briefcase",
-        label: "Servies",
+        label: "Services",
     },
     {
         href: "/resume",

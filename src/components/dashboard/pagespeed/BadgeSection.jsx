@@ -21,6 +21,7 @@ export default function BadgeSection({ active, refetch }) {
           )}
           onClick={() => refetch(route.href)}
         >
+          <i className={route.iconClass}></i>
           {route.label}
         </button>
       ))}
