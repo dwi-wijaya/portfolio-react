@@ -95,4 +95,8 @@
     .show-menu{
         left: 0;
     }
+    .nav__link:hover i {
+        transform: none !important; 
+        scale: 1 !important; 
+    }
 }
